@@ -8,7 +8,7 @@ import java.util.concurrent.atomic.AtomicLong
 @RestController
 class HelloController {
 
-    val counter = AtomicLong()
+
 
     @GetMapping("/hello")
     fun greeting(@RequestParam(value = "name", defaultValue = "World") name: String) =
